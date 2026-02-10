@@ -1,15 +1,17 @@
 
 resources:
-- cvmfs-pv-cern-atlas.yaml
+# - cvmfs-pv-cern-atlas.yaml
+- cvmfs-pv-cern-cms.yaml
+- cvmfs-pv-cern-cms-opendata.yaml
 - cvmfs-pv-cern-sft.yaml
-- cvmfs-pv-config-osg.yaml
-- cvmfs-pv-fermilab.yaml
-- cvmfs-pv-oasis.yaml
+# - cvmfs-pv-config-osg.yaml
+# - cvmfs-pv-fermilab.yaml
+# - cvmfs-pv-oasis.yaml
 # - cvmfs-pv-stash.yaml
-- cvmfs-pv-connect.yaml
-- cvmfs-pv-icecube.yaml
-- cvmfs-pv-nova.yaml
-- cvmfs-pv-singularity.yaml
-- cvmfs-pv-xenon.yaml
-- cvmfs-pv-igwn-software.yaml
+# - cvmfs-pv-connect.yaml
+# - cvmfs-pv-icecube.yaml
+# - cvmfs-pv-nova.yaml
+# - cvmfs-pv-singularity.yaml
+# - cvmfs-pv-xenon.yaml
+# - cvmfs-pv-igwn-software.yaml
 
