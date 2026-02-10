@@ -14,7 +14,7 @@ metadata:
   name: cvmfs-cern-cms
 spec:
   capacity:
-    storage: 2Gi
+    storage: 20Gi
   volumeMode: Filesystem
   accessModes:
   - ReadOnlyMany
@@ -41,5 +41,5 @@ spec:
   - ReadOnlyMany
   resources:
     requests:
-      storage: 2Gi
+      storage: 20Gi
   storageClassName: cvmfs-cern-cms
