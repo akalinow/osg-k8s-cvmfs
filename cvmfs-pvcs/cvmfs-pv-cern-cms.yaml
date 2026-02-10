@@ -35,7 +35,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: cvmfs-cern-cms
-  namespace: cvmfs
+  namespace: default
 spec:
   accessModes:
   - ReadOnlyMany

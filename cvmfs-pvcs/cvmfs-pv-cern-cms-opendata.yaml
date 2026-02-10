@@ -21,7 +21,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: cvmfs-cern-opendata-conddb
   local:
-    path: /var/lib/cvmfs-k8s/opendata-conddb.cern.ch
+    path: /var/lib/cvmfs-k8s/cms-opendata-conddb.cern.ch
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -35,7 +35,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: cvmfs-cern-opendata-conddb
-  namespace: cvmfs
+  namespace: default
 spec:
   accessModes:
   - ReadOnlyMany

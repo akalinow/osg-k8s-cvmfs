@@ -3,6 +3,7 @@ resources:
 # - cvmfs-pv-cern-atlas.yaml
 - cvmfs-pv-cern-cms.yaml
 - cvmfs-pv-cern-cms-opendata.yaml
+- cvmfs-pv-cern-grid.yaml
 - cvmfs-pv-cern-sft.yaml
 # - cvmfs-pv-config-osg.yaml
 # - cvmfs-pv-fermilab.yaml

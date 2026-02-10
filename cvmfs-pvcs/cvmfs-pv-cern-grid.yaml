@@ -1,7 +1,7 @@
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
-  name: cvmfs-cern-sft
+  name: cvmfs-cern-grid
 # Local storage does not need a provisioner
 provisioner: kubernetes.io/no-provisioner
 # Give it out as-is
@@ -11,7 +11,7 @@ volumeBindingMode: Immediate
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: cvmfs-cern-sft
+  name: cvmfs-cern-grid
 spec:
   capacity:
     storage: 2Gi
@@ -19,9 +19,9 @@ spec:
   accessModes:
   - ReadOnlyMany
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: cvmfs-cern-sft
+  storageClassName: cvmfs-cern-grid
   local:
-    path: /var/lib/cvmfs-k8s/sft.cern.ch
+    path: /var/lib/cvmfs-k8s/grid.cern.ch
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -34,7 +34,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: cvmfs-cern-sft
+  name: cvmfs-cern-grid
   namespace: default
 spec:
   accessModes:
@@ -42,4 +42,4 @@ spec:
   resources:
     requests:
       storage: 2Gi
-  storageClassName: cvmfs-cern-sft
+  storageClassName: cvmfs-cern-grid
